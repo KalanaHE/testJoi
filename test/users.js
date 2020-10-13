@@ -143,7 +143,7 @@ describe("Users API", () => {
     await it("It should return 200", (done) => {
       chai
         .request("http://localhost:4000")
-        .delete("/users/deleteuser/5f85739ffe9dedf3b21ae31a")
+        .delete("/users/deleteuser/5f8572784c6f18f264e53aec")
         .end((err, response) => {
           response.should.have.status(200);
           response.body.data.should.be.a("object").that.is.not.empty;
